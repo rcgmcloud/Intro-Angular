@@ -19,6 +19,10 @@
         {{n}}
       </div>
 
+      <ul ng-repeat="character in characters">
+        <li> {{character}} </li>
+      </ul>
+
       <ul>
         <li ng-repeat="book in books">
           <h4> {{ book.title }} </h4>
