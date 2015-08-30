@@ -55,7 +55,7 @@
       <div class="movieDiv">
         <h1>MOVIES</h1>
         <ul>
-          <li ng-repeat="movie in Movies | beforeYearFilter: 2002">
+          <li ng-repeat="movie in Movies | beforeYearFilter: 2002 | orderBy: '-title'">
             <h4> {{ movie.title }} </h4>
           </li>
         </ul>
