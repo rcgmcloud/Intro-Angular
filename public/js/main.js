@@ -1,5 +1,4 @@
-var app = angular.module('myApp', []);
+(function() {
+  var app = angular.module('myApp', []);
+})();
 
-app.controller('myController', ['$scope', function($scope){
-  $scope.test = "Hello";
-}]);
