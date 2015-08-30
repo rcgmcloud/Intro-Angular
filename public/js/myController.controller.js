@@ -1,6 +1,7 @@
 (function(){
   angular.module('myApp')
-    .controller('myController', ['$scope', function($scope){
-    $scope.test = "Hello";
+    .controller('myController', ['$scope', 'myAppTitle', function ($scope, myAppTitle){
+      $scope.myModel = "Cello & Violin";
+      $scope.title = myAppTitle;
   }]);
 })();
