@@ -6,10 +6,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/api', function (req, res, next) {
   res.json([
-    {title: 'Spirited Away'},
-    {title: 'Central Station'},
-    {title: 'Mad Max'},
-    {title: 'Avatar'}
+    {title: 'Spirited Away', year:'2001'},
+    {title: 'Central Station', year:'1983'},
+    {title: 'Mad Max', year:'2015'},
+    {title: 'Avatar', year:'2011'}
     ]);
 });
 
