@@ -7,12 +7,17 @@
     <div ng-controller="myController">
       <h1>{{title}}</h1>
       <h1>{{"Pika" + " Power!"}}</h1>
+      <h2>{{APP_VERSION}}</h2>
       <div>{{2+3}}</div>
       <input ng-model="test" type="text" name="name" value="">
       <p>{{test}}</p>
       <script type="text/javascript" src="/js/main.js" ></script>
+      <script type="text/javascript" src="/js/constants.js" ></script>
       <script type="text/javascript" src="/js/values.js" ></script>
       <script type="text/javascript" src="/js/myController.controller.js" ></script>
     </div>
+    <footer>
+      <small>Version {{APP_VERSION}}</small>
+    </footer>
   </body>
 </html>
