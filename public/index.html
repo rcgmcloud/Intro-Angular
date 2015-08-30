@@ -29,6 +29,16 @@
           <p> {{ book.author }} </p>
         </li>
       </ul>
+      <form action="submit">
+        <input ng-model="newBookTitle" type="text" placeholder="New Title" name="New Title">
+        <input ng-model="newBookAuthor" type="text" placeholder="New Author" name="New Author">
+        <button
+          ng-click="addBook(newBookTitle, newBookAuthor)"
+          type='button'
+          name='button'>
+          Add New Book
+        </button>
+      </form>
 
       <script type="text/javascript" src="/js/main.js" ></script>
       <script type="text/javascript" src="/js/constants.js" ></script>
