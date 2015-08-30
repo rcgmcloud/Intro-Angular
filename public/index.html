@@ -1,12 +1,14 @@
 <html>
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-resource.js"></script>
 
   </head>
   <body ng-app="myApp">
     <div ng-controller="myController">
       <h1>{{title}}</h1>
-      <h1>{{"Pika" + " Power!"}}</h1>
+      <h1>{{"Pineapple" + " Power!"}}</h1>
+      <h1> Dude, I am totally craving some lemon dessert.  Hey, they should make pineapple snickerdoodles. that would be so bomb!!</h1>
       <h2>{{APP_VERSION}}</h2>
       <div>{{2+3}}</div>
       <input ng-model="test" type="text" name="name" value="">
@@ -18,17 +20,20 @@
       <div ng-repeat="n in [42, 43, 44, 45]">
         {{n}}
       </div>
-
+      <h1>CHARACTERS</h1>
       <ul ng-repeat="character in characters">
         <li> {{character}} </li>
       </ul>
 
+      <h1>BOOKS</h1>
       <ul>
         <li ng-repeat="book in books">
           <h4> {{ book.title }} </h4>
           <p> {{ book.author }} </p>
         </li>
       </ul>
+
+      <h3>ADD A NEW BOOK:</h3>
       <form action="submit">
         <input ng-model="newBookTitle" type="text" placeholder="New Title" name="New Title">
         <input ng-model="newBookAuthor" type="text" placeholder="New Author" name="New Author">
@@ -40,11 +45,21 @@
         </button>
       </form>
 
+      <h1>MOVIES</h1>
+      <ul>
+        <li ng-repeat="movie in Movies">
+          <h4> {{ movie.title }} </h4>
+        </li>
+      </ul>
+
+
+
       <script type="text/javascript" src="/js/main.js" ></script>
       <script type="text/javascript" src="/js/constants.js" ></script>
       <script type="text/javascript" src="/js/values.js" ></script>
       <script type="text/javascript" src="/js/factories.js" ></script>
-       <script type="text/javascript" src="/js/services.js" ></script>
+      <script type="text/javascript" src="/js/services.js" ></script>
+      <script type="text/javascript" src="/js/providers.js" ></script>
       <script type="text/javascript" src="/js/myController.controller.js" ></script>
     </div>
     <footer>

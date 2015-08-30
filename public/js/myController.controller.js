@@ -1,6 +1,6 @@
 (function(){
   angular.module('myApp')
-    .controller('myController', ['$scope', 'myAppTitle', 'CharacterVersionFactory', 'BookService', function ($scope, myAppTitle , CharacterVersionFactory, BookService ){
+    .controller('myController', ['$scope', 'myAppTitle', 'CharacterVersionFactory', 'BookService', 'Movies', function ($scope, myAppTitle , CharacterVersionFactory, BookService, Movies ){
       // console.log(APP_VERSION);
 
       $scope.myModel = "Cello & Violin";
@@ -9,6 +9,7 @@
       $scope.books = BookService.getBooks();
       $scope.book = BookService.getBook(1);
       $scope.addBook = BookService.addBook;
+      $scope.Movies = Movies.query();
 
   }]);
 })();
