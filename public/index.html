@@ -3,9 +3,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
 
   </head>
-  <body ng-app>
-    <h1>{{"Pika" + " Power!"}}</h1>
-    <div>{{2+3}}</div>
-
+  <body ng-app="myApp">
+    <div ng-controller="myController">
+      <h1>{{"Pika" + " Power!"}}</h1>
+      <div>{{2+3}}</div>
+      <input ng-model="test" type="text" name="name" value="">
+      <p>{{test}}</p>
+      <script type="text/javascript" src="/js/main.js" ></script>
+    </div>
   </body>
 </html>
