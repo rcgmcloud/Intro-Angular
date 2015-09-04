@@ -4,6 +4,10 @@ var app = express();
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/', function(req, res){
+  res.render('/views/default.html');
+});
+
 app.get('/api', function (req, res, next) {
   res.json([
     {title: 'Spirited Away', year:'2001'},

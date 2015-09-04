@@ -1,0 +1,25 @@
+<div class="navDiv">
+  <ul class="navList">
+    <li><a href="/#">HOME</a></li>
+    <li><a href="#books">BOOKS</a></li>
+    <li><a href="#movies">MOVIES</a></li>
+    <li><a href="#other">OTHER</a></li>
+  </ul>
+</div>
+
+<div class="testDiv">
+  <div>{{2+3}}</div>
+  <input ng-model="test" type="text" name="name" value="">
+  <p>{{test}}</p>
+  <p>{{ myModel }}</p>
+  <p>My favorite book is {{book}}</p>
+  {{ characters }}
+
+  <div ng-repeat="n in [42, 43, 44, 45]">
+    {{n}}
+  </div>
+  <h1>CHARACTERS</h1>
+  <ul ng-repeat="character in characters">
+    <li> {{character}} </li>
+  </ul>
+</div>

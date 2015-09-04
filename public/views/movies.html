@@ -1,0 +1,17 @@
+<div class="navDiv">
+  <ul class="navList">
+    <li><a href="/#">HOME</a></li>
+    <li><a href="#books">BOOKS</a></li>
+    <li><a href="#movies">MOVIES</a></li>
+    <li><a href="#other">OTHER</a></li>
+  </ul>
+</div>
+
+<div class="movieDiv">
+  <h1>MOVIES</h1>
+  <ul>
+    <li ng-repeat="movie in Movies | beforeYearFilter: 2002 | orderBy: '-title'">
+      <h4> {{ movie.title }} </h4>
+    </li>
+  </ul>
+</div>

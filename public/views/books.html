@@ -1,0 +1,32 @@
+<div class="navDiv">
+  <ul class="navList">
+    <li><a href="/#">HOME</a></li>
+    <li><a href="#books">BOOKS</a></li>
+    <li><a href="#movies">MOVIES</a></li>
+    <li><a href="#other">OTHER</a></li>
+  </ul>
+</div>
+
+<div class="bookDiv">
+  <h1>BOOKS</h1>
+  <input ng-model="searchBookTitle" type="text" name="name" value="">
+
+  <ul>
+    <li ng-repeat="book in books | filter:{title: searchBookTitle}">
+      <h4> {{ book.title }} </h4>
+      <p> {{ book.author }} </p>
+    </li>
+  </ul>
+
+  <h3>ADD A NEW BOOK:</h3>
+  <form action="submit">
+    <input ng-model="newBookTitle" type="text" placeholder="New Title" name="New Title">
+    <input ng-model="newBookAuthor" type="text" placeholder="New Author" name="New Author">
+    <button
+      ng-click="addBook(newBookTitle, newBookAuthor)"
+      type='button'
+      name='button'>
+      Add New Book
+    </button>
+  </form>
+</div>

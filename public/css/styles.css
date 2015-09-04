@@ -13,3 +13,13 @@
 .movieDiv {
   background-color: red;
 }
+
+.navList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navList li {
+  display: inline;
+}
